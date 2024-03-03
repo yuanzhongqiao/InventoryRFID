@@ -1,41 +1,30 @@
-# Inventory
-
-An RFID asset management solution for home and business.
-
-With an inventory combined with the help of RFID technology, it'll be a breeze to track item availability, prevent loss, and locate them when needed. [See a demo video here on YouTube](https://bit.ly/inventory-demo-yt).
-
-![](https://github.com/zetavg/Inventory/assets/3784687/9647b3cf-4b6d-4385-9059-eb7b85e2e2df)
-
-
-## Get Inventory
-
-The Inventory iOS/Android app is the mandatory tool we provide for asset tracking and management.
-
-* **iOS TestFlight**: Join via https://testflight.apple.com/join/aXKHypal.
-* **Android APK Download**: Please check the `.apk` assets in the [latest release](https://github.com/zetavg/Inventory/releases).
-
-> To leverage the complete functionality of the app, a compatible RFID UHF reader is needed. See a list of the currently supported devices [in the documentation here](https://docs.inventory.z72.io/rfid-hardware/supported-rfid-devices).
-
-Here are some guides for you to get started: [Get Started Guides](https://docs.inventory.z72.io/get-started/setup).
-
-
-## Documents
-
-See documents on [https://docs.inventory.z72.io](https://docs.inventory.z72.io).
-
-
-## Development
-
-The majority of the codebase is written in TypeScript, employing React Native to build the mobile app. Java and Objective-C native modules are used for handling UART/Bluetooth communications with RFID devices, and other heavy-lifting tasks such as supporting index build for full-text searching. 
-
-For more details on each project component, check the following directories:
-
-* `App/` - the React Native iOS/Android app.
-* `Data/` - data schema and data logic.
-* `packages/` - other shared modules.
-
-
-## Get In Touch
-
-* Telegram Channel: https://t.me/inventory_app.
-* Telegram Group: https://t.me/inventory_app_discussions.
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><div class="markdown-heading" dir="auto"><h1 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存货</font></font></h1><a id="user-content-inventory" class="anchor-element" aria-label="永久链接：库存" href="#inventory"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">适用于家庭和企业的 RFID 资产管理解决方案。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过将库存与 RFID 技术相结合，可以轻松跟踪物品可用性、防止丢失并在需要时找到它们。</font></font><a href="https://bit.ly/inventory-demo-yt" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请在 YouTube 上观看演示视频</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="https://private-user-images.githubusercontent.com/3784687/276932232-9647b3cf-4b6d-4385-9059-eb7b85e2e2df.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk0NDA5NDEsIm5iZiI6MTcwOTQ0MDY0MSwicGF0aCI6Ii8zNzg0Njg3LzI3NjkzMjIzMi05NjQ3YjNjZi00YjZkLTQzODUtOTA1OS1lYjdiODVlMmUyZGYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDNUMDQzNzIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTUwMjY1OTRjZDI4YTA5NWQ3N2ZlNWJmMGJkMTFmZDIzMWU0MWRiYjNmZDVhZGNmMDVmMzdlZTI4Y2Q1MTI4YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.2BreYb9k0oYP2KQCx9R6f_Nkf1C6aFG8RxyWuUwtQUs"><img src="https://private-user-images.githubusercontent.com/3784687/276932232-9647b3cf-4b6d-4385-9059-eb7b85e2e2df.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDk0NDA5NDEsIm5iZiI6MTcwOTQ0MDY0MSwicGF0aCI6Ii8zNzg0Njg3LzI3NjkzMjIzMi05NjQ3YjNjZi00YjZkLTQzODUtOTA1OS1lYjdiODVlMmUyZGYucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQVZDT0RZTFNBNTNQUUs0WkElMkYyMDI0MDMwMyUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyNDAzMDNUMDQzNzIxWiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9NTUwMjY1OTRjZDI4YTA5NWQ3N2ZlNWJmMGJkMTFmZDIzMWU0MWRiYjNmZDVhZGNmMDVmMzdlZTI4Y2Q1MTI4YiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QmYWN0b3JfaWQ9MCZrZXlfaWQ9MCZyZXBvX2lkPTAifQ.2BreYb9k0oYP2KQCx9R6f_Nkf1C6aFG8RxyWuUwtQUs" alt="" style="max-width: 100%;"></a></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">获取库存</font></font></h2><a id="user-content-get-inventory" class="anchor-element" aria-label="永久链接：获取库存" href="#get-inventory"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inventory iOS/Android 应用程序是我们为资产跟踪和管理提供的必备工具。</font></font></p>
+<ul dir="auto">
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">iOS TestFlight ：通过</font></font></strong><font style="vertical-align: inherit;"></font><a href="https://testflight.apple.com/join/aXKHypal" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://testflight.apple.com/join/aXKHypal</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">加入</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Android APK下载</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：请查看</font><a href="https://github.com/zetavg/Inventory/releases"><font style="vertical-align: inherit;">最新版本</font></a></font><code>.apk</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的资源</font><font style="vertical-align: inherit;">。</font></font><a href="https://github.com/zetavg/Inventory/releases"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font></li>
+</ul>
+<blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">为了利用应用程序的完整功能，需要兼容的 RFID UHF 读取器。</font></font><a href="https://docs.inventory.z72.io/rfid-hardware/supported-rfid-devices" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅此处文档中</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当前支持的设备列表</font><font style="vertical-align: inherit;">。</font></font></p>
+</blockquote>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以下是一些入门指南：</font></font><a href="https://docs.inventory.z72.io/get-started/setup" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">入门指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件</font></font></h2><a id="user-content-documents" class="anchor-element" aria-label="永久链接：文档" href="#documents"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"></font><a href="https://docs.inventory.z72.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅https://docs.inventory.z72.io</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">上的文档</font><font style="vertical-align: inherit;">。</font></font></p>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发展</font></font></h2><a id="user-content-development" class="anchor-element" aria-label="永久链接： 发展" href="#development"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">大部分代码库都是用 TypeScript 编写的，使用 React Native 来构建移动应用程序。</font><font style="vertical-align: inherit;">Java 和 Objective-C 本机模块用于处理与 RFID 设备的 UART/蓝牙通信，以及其他繁重的任务，例如支持全文搜索的索引构建。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有关每个项目组件的更多详细信息，请检查以下目录：</font></font></p>
+<ul dir="auto">
+<li><code>App/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- React Native iOS/Android 应用程序。</font></font></li>
+<li><code>Data/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 数据模式和数据逻辑。</font></font></li>
+<li><code>packages/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- 其他共享模块。</font></font></li>
+</ul>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">保持联系</font></font></h2><a id="user-content-get-in-touch" class="anchor-element" aria-label="永久链接：联系我们" href="#get-in-touch"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电报频道： https: </font></font><a href="https://t.me/inventory_app" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//t.me/inventory_app</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">电报群： https: </font></font><a href="https://t.me/inventory_app_discussions" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">//t.me/inventory_app_discussions</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+</ul>
+</article></div>
